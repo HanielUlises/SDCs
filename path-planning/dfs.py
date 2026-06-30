@@ -27,13 +27,13 @@ plt.xlabel('X-axis $(m)$')
 plt.ylabel('Y-axis $(m)$')
 
 #Determine angle psi3 between <x1,x2> and <y1,y2> (atan2(dy,dx)), and plot the arrow on <x1,y1>
-psi3 = np.atan2(y2 - y1, x2 - x1)
+psi3 = atan2(y2 - y1, x2 - x1)
 plt.arrow(x1, y1, x2 - x1, y2 - y1, color="green", head_width=width, head_length=width)
 
 #Configuration Space - for a point use grid[y][x]
 print(grid[754][345])
 print(grid[345][229])
-print(grid[1455][765])
+print(grid[765][1455])
 print(grid.shape)
 print("--------------------------")
 
