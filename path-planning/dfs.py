@@ -29,6 +29,7 @@ plt.ylabel('Y-axis $(m)$')
 #Determine angle psi3 between <x1,x2> and <y1,y2> (atan2(dy,dx)), and plot the arrow on <x1,y1>
 psi3 = atan2(y2 - y1, x2 - x1)
 plt.arrow(x1, y1, x2 - x1, y2 - y1, color="green", head_width=width, head_length=width)
+plt.show()
 
 #Configuration Space - for a point use grid[y][x]
 print(grid[754][345])
